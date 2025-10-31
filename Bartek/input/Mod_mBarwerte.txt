@@ -1,4 +1,4 @@
-Attribute VB_Name = "mBarwerte"
+﻿Attribute VB_Name = "mBarwerte"
 Public Function Act_ax_k(Alter As Integer, Sex As String, Tafel As String, Zins As Double, k As Integer, Optional GebJahr As Integer, Optional Rentenbeginnalter As Integer, Optional Schicht As Integer = 1) As Double
    If k > 0 Then
       Act_ax_k = Act_Nx(Alter, Sex, Tafel, Zins, GebJahr, Rentenbeginnalter, Schicht) / Act_Dx(Alter, Sex, Tafel, Zins, GebJahr, Rentenbeginnalter, Schicht) - Act_Abzugsglied(k, Zins)
@@ -59,4 +59,4 @@ Public Function Act_Abzugsglied(k As Integer, Zins As Double) As Double
       Act_Abzugsglied = Act_Abzugsglied * (1 + Zins) / k
    End If
 
-End Function
+End Function
